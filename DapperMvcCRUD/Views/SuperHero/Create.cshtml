@@ -1,0 +1,41 @@
+﻿@model DapperMvcCRUD.Models.SuperHero
+@{
+    ViewData["Title"] = "Crear nuevo heroe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Crear Nuevo Super Heroe</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post" asp-action="Create">
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Place" class="control-label"></label>
+                    <input asp-for="Place" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Crear Heroe" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<DapperMvcCRUD.Models.SuperHero>
+@{
+    ViewData["Title"] = "Lista de heroes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Lista de Super Heroes</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-success d-block" asp-action="Create" asp-controller="SuperHero">Agregar Nuevo Super Heroe</a>
+        </div>
+    </div>
+
+    <div class="row">
+        @if (Model.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>@Html.DisplayNameFor(m => m.Id)</td>
+                        <td>@Html.DisplayNameFor(m => m.Name)</td>
+                        <td>@Html.DisplayNameFor(m => m.FirstName)</td>
+                        <td>@Html.DisplayNameFor(m => m.LastName)</td>
+                        <td>@Html.DisplayNameFor(m => m.Place)</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.FirstName</td>
+                            <td>@item.LastName</td>
+                            <td>@item.Place</td>
+                            <td>
+                                <a asp-controller="Libros" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
+                                <a asp-controller="Libros" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-warning">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No existen registros</p>
+        }
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ic0wlI8S50AG2ZB3Oe+FAdac10SAHc9zkF9GYAqzrUWW6t1JdPS45Co22uRQec3n4bisenhSpMNw6B5eB5SrOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jose.rangel_fastydev\\Documents\\Dev\\ASP.NET Core\\DapperMvcCRUD\\DapperMvcCRUD\\DapperMvcCRUD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jose.rangel_fastydev\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\jose.rangel_fastydev\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\jose.rangel_fastydev\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
